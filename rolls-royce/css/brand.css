@@ -1,0 +1,123 @@
+/* parallax  */
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+/*  */
+.brand_textbox {
+  text-align: center;
+  padding: 80px 0;
+}
+.brand_title {
+  text-align: center;
+  font-size: 2.3em;
+  font-family: "Raleway";
+  margin-bottom: 50px;
+}
+.brand_text {
+  width: 38%;
+  line-height: 2em;
+  margin: 0 auto;
+}
+/* main:sectopn_1 */
+.sec_1_brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec_1_brand h3 {
+  font-size: 2.8em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 50px;
+}
+.sec_1_brand p {
+  font-size: 1.15em;
+  line-height: 28px;
+  text-align: center;
+}
+/* main:section_2 */
+.sec_2_brand {
+  margin: 100px 0;
+}
+.sec_2_brand h2 {
+  font-size: 2.35em;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.sec_2_brand_slide {
+  height: 300px;
+}
+.sec_2_brand_slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.sec_2_brand_swiperbox .swiper-pagination {
+  position: relative;
+  padding: 50px 0;
+}
+.sec_2_brand h3 {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 30px 0 50px 0;
+  font-family: "Raleway";
+}
+.sec_2_brand p {
+  text-align: center;
+  width: 35%;
+  margin: 0 auto;
+  line-height: 2em;
+  font-family: "Raleway";
+}
+/* main:section_3 */
+.sec_3_brand img {
+  width: 100%;
+}
+
+.sec_3_brand_paralleax {
+  min-height: 832px;
+
+}
+.sec_3_brand_textbox {
+  background: radial-gradient(
+    circle,
+    rgba(32, 10, 50, 1) 0%,
+    rgba(9, 1, 20, 1) 100%
+  );
+  padding: 100px 0;
+  text-align: center;
+}
+/* main:section_4 */
+.sec_4_brand video {
+  width: 100%;
+}
+.sec_4_brand_textbox {
+  height: 300px;
+  margin: 50px 0;
+  text-align: center;
+}
+/* main:section_5 */
+.brand_more {
+  display: inline-block;
+  margin: 45px 0;
+}
+.brand_more:hover {
+  text-decoration: underline;
+}
+.brand_more:after {
+  content: "\e93f";
+  font-family: xeicon !important;
+  transform: translateY(1px);
+}
+.sec_5_brand_parallax {
+  min-height: 598px;
+}
+/* main:section_6 */
+.sec_6_brand {
+  background: url(../img/brand/brand_sec_6_bgimg.jpeg) no-repeat center center;
+}
+.sec_6_brand_imgbox img {
+  width: 100%;
+}
