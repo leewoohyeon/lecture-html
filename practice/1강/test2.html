@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1강_연습문제2</title>
+    <!-- 진영이의 하루 지출 내역은 교통비 3000원,
+        식비 6000원, 
+        음료비 3000원입니다. 조건문을 사용하여 하루 
+        적정 지출 비용인 1만 원을 초과했을 경우에는 “000원 초과＂라고 출력하고, 
+        아닐 경우에는 “돈 관리 잘 했어요!”라고 출력하세요.-->
+    <script>
+        let bus = Number(prompt("교통비를 입력하세요.","0"));
+        let food = Number(prompt("식비를 입력하세요.","0"));
+        let drink = Number(prompt("간식비를 입력하세요.","0"));
+        if(bus+food+drink <= 10000 ){
+            alert("돈 관리를 잘했어요!");
+        }else{
+            alert(bus+food+drink-10000+"을 초과하였습니다");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

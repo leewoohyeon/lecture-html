@@ -1,0 +1,222 @@
+input:focus {
+  box-shadow: 0px 0px 5px 1px #009cff;
+}
+#row {
+  width: 750px;
+  overflow: hidden;
+  margin: 80px auto 180px auto;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+.loginpage {
+  width: 730px;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.login_box_1 {
+  width: 685px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+.text_555 {
+  color: #555;
+  font-size: 13px;
+}
+.sm-title {
+  display: inline-block;
+  width: 110px;
+}
+.login_box_1 p {
+  font-size: 13px;
+  margin: 20px 0;
+}
+.login_box_1 b {
+  font-size: 15px;
+}
+.id_text_box {
+  margin: 10px 0;
+}
+.id_text_box input {
+  width: 465px;
+  height: 35px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #000;
+}
+.id_text_box button {
+  width: 70px;
+  height: 37px;
+  line-height: 37px;
+  background: #009cff;
+  color: #fff;
+  margin-left: 25px;
+}
+.id_text_box button:hover {
+  background-color: #007de7;
+  transition: all 0.2s;
+}
+.login_input_box input {
+  width: 565px;
+  height: 35px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #000;
+  margin: 15px 0 8px 0;
+}
+.login_box_1 div:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+.login_box_1 div:nth-of-type(3) {
+  margin-bottom: 50px;
+}
+/* login_box_2 */
+.login_box_2 {
+  width: 685px;
+  margin: 15px auto;
+  border-bottom: 1px solid #ddd;
+}
+.login_box_2 b {
+  font-size: 15px;
+}
+.login_input_box i {
+    font-size: 15px;
+    vertical-align: middle;
+    transform: translateY(-1px);
+}
+/* login_box_2 ul */
+.login_box_2 ul {
+  background: #eee;
+  padding: 10px 5px;
+  font-weight: 700;
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.login_box_2 ul li {
+  font-weight: 400;
+  padding: 3px;
+}
+/* telbox */
+.tel_box input {
+  width: 165px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.tel_box input:focus {
+  box-shadow: 0px 0px 5px 1px #009cff;
+}
+.tel_box input:nth-of-type(1) {
+  margin-right: 10px;
+}
+.tel_box input:nth-of-type(2) {
+  margin: 0 10px;
+}
+.tel_box input:nth-of-type(3) {
+  margin-left: 10px;
+}
+/* email_box */
+.email_box {
+  margin: 50px 0;
+}
+.email_box label:nth-of-type(2) {
+  margin: 0 10px;
+}
+.email_box select {
+  margin-left: 12px;
+}
+.email_box input,
+.form-control {
+  border: 1px solid #ddd;
+  width: 169px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+/* login_3_box */
+.login_box_3 {
+  width: 685px;
+  margin: 15px auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 50px;
+}
+.login_box_3 b {
+  font-size: 15px;
+}
+.login_box_3 > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.login_box_3_checkbox {
+  display: flex;
+  align-items: center;
+}
+.login_box_3_checkbox span {
+  margin: 0 3px;
+  font-size: 12px;
+}
+.login_box_3_checkbox input:nth-of-type(2) {
+  margin-left: 15px;
+}
+.login_box_3 p,
+.login_box_4 p {
+  font-size: 14px;
+  color: #555;
+}
+/* login_box_4 */
+.login_box_4 {
+  width: 685px;
+  margin: 15px auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 50px;
+}
+.login_box_4 b {
+  font-size: 15px;
+}
+.login_box_4 > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.login_box_4 span {
+    font-size: 11px;
+}
+.login_box_4 span+i {
+    color: #555;
+}
+/* login_box_5 */
+.login_box_5 input {
+  width: 420px;
+  height: 35px;
+  margin: 0 0 30px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+/* login_box_6 */
+.login_box_6 {
+  width: 190px;
+  margin: 0 auto;
+}
+.submit_button {
+  color: #fff;
+  background: #009cff;
+  width: 190px;
+  height: 45px;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}

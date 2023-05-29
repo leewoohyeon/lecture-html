@@ -1,0 +1,356 @@
+/* header */
+@media (max-width: 768px) {
+  #header .gnb {
+    width: 100%;
+  }
+  #header .nav,
+  #header .etc_menu {
+    display: none;
+  }
+  /* header hamberger */
+  .hamberger {
+    display: block;
+  }
+  input[id="trigger"] {
+    display: none;
+  }
+  label[for="trigger"] {
+    width: 30px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 23px;
+    right: 10px;
+    transition: 0.3s;
+  }
+  label[for="trigger"] span {
+    display: block;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  label[for="trigger"] span:nth-child(1) {
+    top: 0;
+  }
+  label[for="trigger"] span:nth-child(2) {
+    top: 50%;
+  }
+  label[for="trigger"] span:nth-child(3) {
+    top: 100%;
+  }
+  input[id="trigger"]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  input[id="trigger"]:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  input[id="trigger"]:checked + label span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  /* sidebar */
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #f6f6f6;
+    top: 73px;
+    right: -100%;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  input[id="trigger"]:checked ~ .sidebar {
+    right: 0;
+  }
+  input[id="trigger"]:checked + label {
+    right: 20px;
+  }
+  input[name="side-item"] {
+    display: none;
+  }
+  input[name="side-item"] + label {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: 500;
+  }
+  input[name="side-item"] + label span {
+    transition: 0.25s;
+    font-size: 23px;
+  }
+  input[name="side-item"]:checked + label span {
+    transform: rotate(180deg);
+  }
+  .side-content {
+    display: none;
+  }
+  input[name="side-item"]:checked + label + .side-content {
+    display: block;
+  }
+  .side-content li {
+    padding: 15px;
+    cursor: pointer;
+    color: #333;
+  }
+  .side-content li:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  /* section:1 */
+  #section_1 .section_banner_img1 {
+    background: #f3efec url("../img/mobile/main_slide_mobile_01.png") center;
+  }
+  #section_1 .section_banner_img2 {
+    background: #8a70d4 url(../img/mobile/main_slide_mobile_02.png) no-repeat;
+  }
+  #section_1 .section_banner_img3 {
+    background: #f2f3f7 url(../img/mobile/main_slide_mobile_03.png) center;
+  }
+  #section_1 .section_banner_img4 {
+    background: #eed3cc url(../img/mobile/main_slide_mobile_04.png) center;
+  }
+  #section_1 .section_banner_img5 {
+    background: #d0e7cf url(../img/mobile/main_slide_mobile_05.png) center;
+  }
+  #section_1 .section_textbox {
+    width: 100%;
+  }
+  #section_1 .section_box h2 {
+    font-size: 28px;
+  }
+  #section_1 .section_box p {
+    font-size: 14px;
+  }
+  #section_1 .section_box button {
+    width: 120px;
+    height: 45px;
+    font-size: 13px;
+  }
+  #section_1 .section_box_menu ul {
+    width: 100%;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 10%);
+  }
+  #section_1 .section_box_menu ul li {
+    flex: 1;
+  }
+  #section_1 .section_box_menu ul li button {
+    font-size: 10px;
+  }
+  #section_1 .section_box_menu ul li:hover button {
+    font-size: 10px;
+  }
+  /* section:2 */
+  #section_2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #section_2 .section_2_left {
+    width: 95%;
+    height: auto;
+  }
+  .login {
+    flex-direction: column;
+  }
+  .login_left {
+    margin-bottom: 10px;
+  }
+  .login_box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .login button {
+    width: 100%;
+  }
+  .n_login {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .n_login span {
+    margin-left: 0px;
+  }
+  .section_2_list {
+    margin-top: 25px;
+  }
+
+  /*  */
+  .fast_button {
+    width: 100%;
+    margin: 12px 0;
+  }
+  .section_2_right {
+    width: 100%;
+    margin-left: 0;
+    padding: 25px;
+  }
+  .domain {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .section_2_imgbox {
+    width: 95%;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  .section_2_imgbox p {
+    font-size: 20px;
+  }
+  /* section:3 */
+  #section_3 {
+    height: auto;
+    background: #009cff;
+  }
+  .section_3_box {
+    width: 100%;
+  }
+  /* section:4 */
+  #section_4 {
+    margin: 0;
+    padding: 50px 0;
+  }
+  .section_4_inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #section_4 .section_4_button {
+    width: auto;
+  }
+  /* section:5 */
+  #section_5 .section_5_box {
+    width: 95%;
+  }
+  #section_5 .section_5_box_left {
+    width: 20%;
+  }
+  #section_5 .section_5_box_right {
+    width: 80%;
+  }
+  /* footer_1 */
+  #footer_1 .footer_1_box {
+    width: 100%;
+  }
+  #footer_1 .footer_1_main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer_1 .footer_1_main > li {
+    width: 95%;
+  }
+  .footer_1_main_title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_1_main_title:after {
+    content: "\e942";
+    font-family: xeicon !important;
+    display: inline-block;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .footer_1_main_title.active:after {
+    transform: rotate(180deg);
+  }
+  #footer_1 .footer_1_main > li > a {
+    width: inherit;
+    margin: 0;
+  }
+  #footer .footer_1_sub > li {
+    width: inherit;
+  }
+  .footer_1_sub {
+    display: none;
+  }
+  .footer_1_main_title.active + .footer_1_sub {
+    display: block;
+  }
+  /* footer_2 */
+  #footer_2 {
+    width: 95%;
+  }
+  /* footer_3 */
+  #footer_3 .footer_3_top {
+    width: 95%;
+  }
+  #footer_3 .footer_3_top_right {
+    width: 95%;
+    float: left;
+    margin-top: 35px;
+  }
+  #footer_3 .footer_3_logo img {
+    width: 55px;
+  }
+  #footer_3 .footer_3_logo a:last-child img {
+    width: 75px;
+  }
+  .footer_3_bottom {
+    width: 95%;
+  }
+  .footer_3_bottom {
+    padding-top: 18px;
+  }
+  /* signup.index */
+
+  #row {
+    width: 98%;
+    margin-bottom: 100px;
+  }
+  .loginpage {
+    width: 95%;
+  }
+  .login_box_1 {
+    width: 90%;
+  }
+  .sm-title {
+    width: 15%;
+  }
+  .id_text_box input {
+    width: 68%;
+  }
+  .id_text_box button {
+    width: 13%;
+    margin-left: 10px;
+  }
+  .login_input_box input {
+    width: 84%;
+  }
+  .login_box_1 div:nth-of-type(3) {
+    margin-bottom: 38px;
+  }
+  /* login_box_2 */
+  .login_box_2 {
+    width: 90%;
+    margin-top: 42px;
+  }
+  .login_box_2 ul {
+    margin: 20px 0;
+  }
+  .tel_box input {
+    width: 24%;
+  }
+  .email_box input, .form-control {
+    width: 24%;
+  }
+/* login_3_box */
+  .login_box_3{
+    width: 90%;
+  }
+  /* login_box_4 */
+  .login_box_4 {
+    width: 90%;
+  }
+  /*  */
+  .login_box_5 input {
+    width: 90%;
+    margin: 30px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation_test</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        img {
+            display:block;
+        }
+        #wrap {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .back {
+            background-image: url(./img/back.png);
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            animation-name: back;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            overflow: hidden;
+        }
+        .ani {
+            position: relative;
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; 
+            animation-timing-function: linear;
+            margin-top: 9px;
+        }
+        @keyframes ani {
+            from {
+                left: -110px;
+            }
+            to {
+                left: 510px;
+            }
+        }
+        @keyframes back {
+            form{
+              background-position:0px;
+            }
+            to {
+              background-position: -500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="back">
+            <img class="ani" src="./img/ani1.png" alt="공룡" />
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'notosans';
+    src: url('../font/Noto_Sans_KR/NotoSansKR-Bold.otf');
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/Pretendard/public/variable/PretendardVariable.ttf') format('truetype');
+}

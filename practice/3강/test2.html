@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3강_연습문제2</title>
+    <!-- 조건식 i<=30, 짝수일 경우에는 파란색, 홀수일 경우에는 빨간색으로 출력되도록 작성하여 봅시다.
+클래스 적용 : document.write(“<p class=‘blue’>”+i+”</p>”);-->
+    <style>
+        .red {
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+    </style>
+    <script>
+        for(let i = 1; i <= 30; i++){
+            if(i%2 === 0){
+                document.write("<p class='blue'>"+i+"</p>");
+            }else{
+                document.write("<p class='red'>"+i+"</p>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

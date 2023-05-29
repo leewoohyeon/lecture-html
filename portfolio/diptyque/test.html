@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const form = $('#signup-form');
+      const usernameInput = $('#username');
+      const emailInput = $('#email');
+      const passwordInput = $('#password');
+      const confirmPasswordInput = $('#confirm-password');
+  
+      form.submit(function(event) {
+        event.preventDefault(); // 폼 제출 방지
+  
+        // 유효성 검사
+        if (usernameInput.val().trim() === '') {
+          alert('Username을 입력해주세요.');
+          return;
+        }
+  
+        if (emailInput.val().trim() === '') {
+          alert('Email을 입력해주세요.');
+          return;
+        }
+  
+        if (!isValidEmail(emailInput.val())) {
+          alert('유효한 Email 형식이 아닙니다.');
+          return;
+        }
+  
+        if (passwordInput.val().trim() === '') {
+          alert('Password를 입력해주세요.');
+          return;
+        }
+  
+        if (!isValidPassword(passwordInput.val())) {
+          alert('Password는 영문, 숫자, 특수문자를 모두 포함해야 합니다.');
+          return;
+        }
+  
+        if (confirmPasswordInput.val().trim() === '') {
+          alert('Confirm Password를 입력해주세요.');
+          return;
+        }
+  
+        if (passwordInput.val() !== confirmPasswordInput.val()) {
+          alert('Password와 Confirm Password가 일치하지 않습니다.');
+          return;
+        }
+  
+        // 유효성 검사 통과
+        alert('회원가입이 완료되었습니다.');
+        form[0].reset(); // 폼 초기화
+      });
+  
+      // Email 유효성 검사 함수
+      function isValidEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+      }
+  
+      // Password 유효성 검사 함수
+      function isValidPassword(password) {
+        // 영문, 숫자, 특수문자를 모두 포함하는지 검사
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+        return passwordRegex.test(password);
+      }
+    });
+  </script>
+</head>
+<body>
+  <form id="signup-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password">
+  
+    <button type="submit">Sign Up</button>
+  </form>
+  
+</body>
+</html>

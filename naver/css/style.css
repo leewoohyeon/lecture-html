@@ -1,0 +1,369 @@
+
+
+@charset "utf-8";
+
+/* 초기화 코드 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+
+    text-decoration: none;
+    color:black;
+}
+
+li {
+
+    list-style: none;
+}
+
+img {
+
+    display: block;
+    width: 240px;
+    height: 44px;
+}
+
+address {
+    font-style:unset;
+}
+
+input:focus {
+    
+    outline:none;
+}
+
+#wrap {
+
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+
+#header {
+
+    width: 600px;
+    margin: 0 auto;
+}
+
+#logo_img {
+
+    width: 240px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+}
+
+
+
+#section {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+   
+}
+
+
+/* section sectionbox_1 = id part */
+
+#section .textbox label {
+
+    font-weight: 900;
+    display: block;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+#section .textbox div, .telbox {
+
+ width: 400px;
+ background-color: #fff;
+ box-sizing: border-box;
+ padding: 10px;   
+ border: 1px solid #dcdcdc;
+ color:#737373;
+
+
+
+}
+
+#section .textbox input {
+
+ width: 250px;
+ border: 0;
+
+ 
+}
+
+#section .textbox div span {
+    display: block;
+    float: right;
+}
+
+
+
+
+
+#section .passwordbox {
+
+  
+    display: inline-block;
+    width: 350px;
+ 
+
+}
+
+#section .fa-lock  {
+ 
+    float: right;
+    margin-right: 3px;
+    
+}
+
+
+/* section sectionbox2 */
+
+#section 
+
+
+
+/* section 생년월일 .date */
+
+#section .date {
+
+    width: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#section .date label {
+    font-weight: 900;
+    padding : 10px 0;
+    display: block;
+    font-size: 15px;
+}
+
+#section .date input {
+ 
+    width: 123px;
+    height: 43px;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #dcdcdc;
+    padding-left: 7px;
+
+}
+
+#section .date select {
+ 
+    width: 123px;
+    box-sizing: border-box;
+    height: 43px;
+    border: 1px solid #dcdcdc;
+    color:#737373;
+    padding: 0 5px;
+    margin: 0 10px;
+
+}
+
+
+
+
+
+
+#section .gender select {
+
+    width: 400px;
+    box-sizing: border-box;
+    height: 43px;
+    border: 1px solid #dcdcdc;
+    color:#737373;
+    padding: 0 5px;
+
+}
+
+/* section 이메일 */
+
+#section .emailbox span{
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+}
+#section .emailbox input {
+    text-align: left;
+    
+}
+
+/* section 전화번호 */
+
+
+#section .telsubmit label {
+
+    font-weight: 900;
+    padding : 10px 0;
+    display: block;
+    font-size: 15px;
+
+}
+
+#section .telbuttonbox {
+    width: 400px;
+    margin: 5px 0;
+}
+
+#section .telbuttonbox input {
+
+    width: 280px;
+    text-align: left;
+    margin: 10px 5px 10px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px;   
+    border: 1px solid #dcdcdc;
+    color:#737373;
+
+}
+
+
+
+#section .telbuttonbox button {
+    width: 105px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 500;
+    border: 1px solid #dcdcdc;
+    height: 42px;
+    background-color: #03c75a;
+}
+
+#section .telbuttonbox button a {
+
+    color: #fff;
+}
+
+
+#section .telsubmitbox {
+    
+    width: 400px;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;;
+    color: #fff;
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    color: #828282;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+
+#section .telsubmit input:nth-of-type(2) {
+    width: 400px;
+    height: 43px;
+    display: block;
+    cursor: pointer;
+    background-color: #03c75a;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 10px;
+    border: none;
+
+}
+
+#section .telbox a {
+    color: #fff;
+}
+
+
+
+
+
+/* footer */
+#footer {
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#footer .footermenu {
+
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#footer .footerlist {
+
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    
+}
+
+#footer .footerlist::after {
+    content: '';
+    width: 1px;
+    height: 11px;
+    display: inline-block;
+    background-color: black;
+    margin: 0 5px;
+}
+#footer .footerlist:nth-of-type(1) {
+    padding-left: 4px;
+}
+
+#footer .footerlist:nth-of-type(2) {
+    font-weight: 900;
+}
+
+
+#footer .footerlist:last-child::after {
+display: none;
+}
+
+
+
+/* footer copyright */
+
+#footer .footer_address {
+    
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+
+
+#footer .footer_address img {
+    float: left;
+    width: 63px;
+    height: 12px;
+}
+#footer .footer_copy {
+    height: 20px;
+    line-height: 13px;
+    margin-bottom: 15px;
+}
+
+#footer .footer_copy span {
+
+    font-size: 10px;
+    padding: 0 2px;
+}
+
+#footer .footer_copy span:nth-of-type(1) {
+    margin-left: 10px;
+}
+
+#footer .footer_copy span:nth-of-type(2) {
+    font-weight: 900;
+}
+
+

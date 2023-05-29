@@ -1,0 +1,102 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  header {
+    padding: 0 20px;
+  }
+  /* Common css */
+  section {
+    padding: 20px;
+  }
+  /* Section-Welcome */
+  .welcome {
+    height: 100vh;
+  }
+  /* Section-Heading */
+  .heading {
+    width: 100%;
+  }
+  /* Gestarted */
+  .getstarted {
+    width: 95%;
+  }
+  .getstarted input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .getstarted button {
+    width: 100%;
+  }
+  .heading h3 {
+    width: 100%;
+    font-size: 34px;
+  }
+  /* Section - enjoy, download, watch, create */
+  .enjoy,
+  .download,
+  .watch,
+  .create,
+  .inner {
+    width: 100%;
+    height: auto;
+  }
+  .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc,
+  .preview {
+    width: 100%;
+    text-align: center;
+  }
+  .desc h3 {
+    font-size: 30px;
+  }
+  .desc p {
+    font-size: 16px;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+  .download .inner .desc,
+  .create .inner .desc {
+    order: 1;
+  }
+  .download .inner .preview,
+  .create .inner .preview{
+    order: 2;
+  }
+  .faq {
+    padding: 80px 20px;
+  }
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-inner h3 {
+    font-size: 30px;
+    line-height: 1.3em;
+  }
+  input[name="faq-item"] + label span {
+    font-size: 20px;
+}
+  /* Footer */
+  footer {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .links {
+    flex-direction: column;
+  } 
+  /* Modal */
+  .login {
+    width: 100%;
+  }
+  .copyright {
+    max-width: 470px;
+  }
+}

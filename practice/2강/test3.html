@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2강_연습문제3</title>
+    <!-- 연습문제 3) 사칙연산 기호(+,-,*,/)와 숫자 두 개를 입력받아 연산 결과를 출력하는 프로그램을 작성하세요.  -->
+    <script>
+        let num1= Number(prompt("값을 입력하세요","0"));
+        let cal = prompt("연산 기호를 입력하세요(+,-,*,/)","");
+        let num2= Number(prompt("값을 입력하세요","0"));
+        let result;
+
+        switch(cal) {
+            case "+" : result = num1 + num2;
+            break;
+            case "-": result = num1 - num2;
+            break;
+            case "*" : result = num1*num2;
+            break;
+            case "/" : result = num1 / num2;
+            break;
+            default:alert("값을 잘못입력하셨습니다.")
+        }
+        
+        alert(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

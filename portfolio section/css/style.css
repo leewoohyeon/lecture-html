@@ -1,0 +1,148 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6em;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6em;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+/* Common CSS */
+.headline-share {
+  text-align: center;
+}
+.headline-share h1{
+  font-size: 56px;
+  padding: 20px 0 45px 0;
+  font-weight: 500;
+  position: relative;
+}
+.headline-share h1::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, #1f8de6, #5ed6fe) ;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Section - Portfolio */
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-items:center;
+  background: url(../images/background.png) no-repeat
+  ;
+  background-position: top right;
+  height: 100vh;
+}
+.items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+} 
+.thum .photo {
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 45px -10px rgba(0,0,0,0.15);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: 2s;
+}
+.thum:hover .photo {
+  background-position: bottom;
+}
+.thum:nth-of-type(1) .photo {
+  background-image: url(../images/web-portfolio-01.jpg);
+}
+.thum:nth-of-type(2) .photo{
+  background-image: url(../images/web-portfolio-02.jpg);
+}
+.thum:nth-of-type(3) .photo {
+  background-image: url(../images/web-portfolio-03.jpg);
+}
+.thum span {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+.btn-view {
+  font-size: 10px;
+  padding:2px 8px;
+  margin: 0 3px;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn-view.pc {
+  background-color: crimson;
+}
+.btn-view.mobile {
+  background-color: royalblue;
+}
+aside.item b {
+  font-size: 14px;
+  color: crimson;
+}
+aside.item h2 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+.portfolio-info {
+  margin-top: 20px;
+}
+.portfolio-info span {
+  display: list-item;
+  list-style:disc;
+  margin:0 0 0 15px;
+}
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  margin-left: 0;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.featherlight iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 20px;
+  left: 20px;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+  outline: none;
+}

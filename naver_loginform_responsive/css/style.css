@@ -1,0 +1,163 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  background-color: #f5f6f7;
+  line-height: 1.5em;
+  color: #222;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+/* Reset CSS */
+input,
+select {
+  cursor: pointer;
+}
+/* Member */
+.member {
+  width: 460px;
+  margin: auto;
+  /* padding: 0 20px; */
+}
+.member img {
+  height: 30px;
+  display: block;
+  margin: 50px auto;
+}
+.member input:not(input[type="radio"]),
+.member select {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #dadada;
+}
+.member input:not(input[type="radio"]):focus,
+.member select:focus {
+  border: 1px solid #2db400;
+}
+.member input[type="button"],
+.member input[type="submit"] {
+  background-color: #2db400;
+  color: #fff;
+}
+.field {
+  margin: 5px 0;
+}
+.field b {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.field.birth div {
+  display: flex;
+  gap: 10px;
+}
+.field.tel-number div {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+}
+.field.tel-number div input:nth-child(1) {
+  flex: 2;
+}
+.field.tel-number div input:nth-child(2) {
+  flex: 1;
+}
+.field.gender div {
+  border: 1px solid #dadada;
+  background-color: #fff;
+  padding: 15px 7px;
+}
+.placehold-text {
+  display: block;
+  position: relative;
+}
+.placehold-text::before {
+  content: "@naver.com";
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  pointer-events: none;
+}
+.user-pw {
+  background: #fff url(../img/icon-01.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+.user-pw-confirm {
+  background: #fff url(../img/icon-02.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+/* Checked Radio Button */
+.field.gender input[name=gender]{
+  display: none;
+}
+.field.gender label{
+  cursor: pointer;
+  margin-right: 5px;
+}
+.field.gender label em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  transform: translateY(3px);
+  margin-right: 3px;
+  background: url(../img/icon-radio.png) no-repeat left;
+}
+.field.gender input[name=gender]:checked + em {
+  background-position: right;
+}
+/* Custom Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(../img/icon-select.png) no-repeat center right 20px;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* footer */
+.member-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 13px;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #2db400;
+}
+.member-footer div a:nth-of-type(2) {
+  font-weight: 500;
+}
+.member-footer div a::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  display: inline-block;
+  background-color: #bbb;
+  margin: 0 5px;
+}
+.member-footer div a:nth-of-type(5):after{
+  display: none;
+}
+@media (max-width:768px) {
+  .member {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

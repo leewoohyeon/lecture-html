@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>닷홈 | 호스팅은 닷홈</title>
+  <!-- XE icon -->
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Reponsive CSS -->
+  <link rel="stylesheet" href="./css/reponsive.css">
+  <!-- JQuery -->
+  <script src="./js/jquery-3.6.4.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="gnb">
+        <h1 class="gnb_logo">
+          <a href="https://www.dothome.co.kr/">
+            <img src="./img/logo.png" alt="로고이미지" title="닷홈로고" />
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#none">도메인
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">웹호스팅
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">닷홈빌더
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">IDC
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">웹메일
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">보안
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="etc_menu">
+          <ul>
+            <li>
+              <a href="./login.html"> 로그인 </a>
+            </li>
+            <li>
+              <a href="./signup.html"> 회원가입 </a>
+            </li>
+            <li>
+              <a href="#none"> 고객센터 </a>
+            </li>
+            <li>
+              <a href="#none"> 마이닷홈 </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamberger">
+          <input type="checkbox" id="trigger">
+          <label for="trigger" class="side-open">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="sidebar">
+            <div class="siderbar_inner">
+              <input type="radio" id="side1" name="side-item">
+              <label for="side1">
+                도메인
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>도메인 검색</li>
+                <li>도메인 연장</li>
+                <li>도메인 기관이전</li>
+                <li>스마트스토어 도메인 연결</li>
+              </ul>
+              <input type="radio" id="side2" name="side-item">
+              <label for="side2">
+                웹호스팅
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>리눅스 웹호스팅</li>
+                <li>워드프레서 웹호스팅</li>
+                <li>무제한 웹호스팅</li>
+                <li>단독 웹호스팅</li>
+                <li>이미지 웹호스팅</li>
+              </ul>
+              <input type="radio" id="side3" name="side-item">
+              <label for="side3">
+                닷홈빌더
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>닷홈빌더 신청</li>
+                <li>요금제</li>
+                <li>템플릿</li>
+                <li>기능</li>
+              </ul>
+              <input type="radio" id="side4" name="side-item">
+              <label for="side4">
+                IDC
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>KT 클라우드</li>
+                <li>임대형 서버호스팅</li>
+                <li>구매형 서버호스팅</li>
+                <li>코로케이션</li>
+              </ul>
+              <input type="radio" id="side5" name="side-item">
+              <label for="side5">
+                웹메일
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>베이직 웹메인</li>
+                <li>무제한 웹메일</li>
+                <li>기업보안 웹메일</li>
+                <li>웹메일 소개</li>
+              </ul>
+              <input type="radio" id="side6" name="side-item">
+              <label for="side6">
+                도메인
+                <span>
+                  <i class="xi-angle-down-min">
+                  </i>
+                </span>
+              </label>
+              <ul class="side-content">
+                <li>도메인 검색</li>
+                <li>도메인 연장</li>
+                <li>도메인 기관이전</li>
+                <li>스마트스토어 도메인 연결</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section id="section_1">
+        <div class="slider">
+          <div class="section_banner_img1 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>쉽고 빠른 홈페이지 제작 닷홈빌더</h2>
+                <p>
+                  다양한 템플릿과 디자인 블럭으로초보자도<br />
+                  쉽고 빠르게 홈페이지를 만들 수 있습니다.
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="section_banner_img2 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>리눅스 웹호스팅 시작가 50% 할인</h2>
+                <p>
+                  월 이용료 반값 할인으로 더욱 부담없는 인기 웹호스팅입니다.
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="section_banner_img3 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>도메인 신규 등록 25% 할인</h2>
+                <p>
+                  할인쿠폰으로 가격부담없이 신규 도메인을 신청해보세요!<br />
+                  (net/org/biz/info/pe.kr 제외)
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="section_banner_img4 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>구매로 이어지는 상세페이지</h2>
+                <p>
+                  오픈마켓 상세페이지는 닷홈 이미지 빌더로 쉽고 간편하게 제작하세요.
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="section_banner_img5 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>GlobalSign 인증서 1개월 추가 제공</h2>
+                <p>
+                  SSL보안인증서를 설치하여 웹사이트를 안전하게 보호하세요.<br />
+                  GlobalSign 인증서 신청 시 1개월을 추가 제공합니다.
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+          <div class="section_banner_img1 section_banner">
+            <div class="section_textbox">
+              <div class="section_box">
+                <h2>쉽고 빠른 홈페이지 제작 닷홈빌더</h2>
+                <p>
+                  다양한 템플릿과 디자인 블럭으로초보자도<br />
+                  쉽고 빠르게 홈페이지를 만들 수 있습니다.
+                </p>
+                <button>자세히보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_box_menu">
+          <ul>
+            <li>
+              <button>
+                홈페이지 제작은
+                <b>닷홈빌더</b>
+              </button>
+            </li>
+            <li>
+              <button>
+                리눅스 웹호스팅 시작가
+                <b>50%할인</b>
+              </button>
+            </li>
+            <li>
+              <button>
+                도메인 신규 등록
+                <b>25%할인</b>
+              </button>
+            </li>
+            <li>
+              <button>
+                구매로 이어지는
+                <b>상세페이지</b>
+              </button>
+            </li>
+            <li>
+              <button>
+                GlobalSign 인증서
+                <b>1개월 추가 제공</b>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section_2">
+        <div class="section_2_left">
+          <div class="login">
+            <div class="login_left">
+              <div class="login_box">
+                <input type="text" placeholder="아이디" />
+              </div>
+              <div class="login_box">
+                <input type="text" placeholder="비밀번호" />
+              </div>
+            </div>
+            <div class="login_right">
+              <button>로그인</button>
+            </div>
+          </div>
+          <div class="n_login">
+            <img src="./img/n_logo.png" alt="네이버로고" />
+            <span>|</span>
+            <button>네이버 아이디 로그인</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <span>아이디저장</span>
+          </div>
+          <ul class="section_2_list">
+            <li>
+              <a href="#none">아이디 찾기</a>
+            </li>
+            <li>
+              <a href="#none">비밀번호 찾기</a>
+            </li>
+            <li>
+              <a href="#none">회원가입</a>
+            </li>
+          </ul>
+          <button class="fast_button">기술지원 바로가기</button>
+        </div>
+        <div class="section_2_right">
+          <div class="domain">
+            <!-- <span class="domain_left">www.</span> -->
+            <p class="domain_left">www.</p>
+            <input type="text" placeholder="등록하실 도메인을 입력해주세요." />
+            <button class="domain_button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              검색
+            </button>
+          </div>
+          <div class="section_2_imgbox">
+            <a href="#none">
+              <p>
+                어떤 상품을 고를지 고민되시나요?
+                <br />
+                나에게 맞는 서비스를 찾아보세요!
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="section_3">
+        <div class="section_3_box">
+          <h2>웹사이트 운영은 닷홈에서!</h2>
+          <ul class="section_3_menu">
+            <li>
+              <img src="./img/icon_main_feature1.png" alt="아이콘1" />
+              <b>24시간 문의 대응</b>
+              <p>365일 24시간 서버 모니터링 및 장애 문의 대응</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature2.png" alt="아이콘1" />
+              <b>17년 경력의 노하우</b>
+              <p>다년간의 경험으로 안정적인 서버 운영</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature3.png" alt="아이콘1" />
+              <b>전문적인 관리</b>
+              <p>호스팅 연구소 전문 개발자의 꾸준한 기능 개선</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature4.png" alt="아이콘1" />
+              <b>국내 1위 무료 호스팅</b>
+              <p>웹호스팅, 웹메일 등 다양한 무료 콘텐츠 제공</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature5.png" alt="아이콘1" />
+              <b>빠르고 안정적인 기술력</b>
+              <p>
+                10Gigabit 망 및 3단계 백업 시스템으로 안정적인 호스팅 운영
+              </p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature6.png" alt="아이콘1" />
+              <b>합리적인 가격</b>
+              <p>주요 도메인을 저렴한 가격에 등록 가능</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature7.png" alt="아이콘1" />
+              <b>상황별 맞춤 웹호스팅</b>
+              <p>무제한 트래픽부터 단독 서버까지 다양한 웹호스팅 서비스</p>
+            </li>
+            <li>
+              <img src="./img/icon_main_feature8.png" alt="아이콘1" />
+              <b>쉽고 빠른 웹사이트 빌더</b>
+              <p>닷홈빌더 반응형 웹사이트 테마 및 30일 무료체험 제공</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section_4">
+        <div class="section_4_inner">
+          <h2>문의사항이 있으신가요?</h2>
+          <p>
+            닷홈에서 제공하는 서비스에 대하여 궁금한 사항이나 도움이 필요한 경우
+            전문 상담팀의 기술 지원을 제공해드리고 있습니다. <br />
+            문의에 대한 답변은 고객센터 운영 시간 내 받아보실 수 있으며, 긴급
+            장애의 경우 24시간 운영하고 있습니다.
+          </p>
+          <div class="section_4_button">
+            <a href="#none">1:1 문의하기</a>
+            <a href="#none">자주묻는 질문과 답변</a>
+          </div>
+          <div class="section_4_qna">
+            <p>일반 문의 : 9:30 ~ 17:30(주말, 공휴일 제외)</p>
+            <p>장애 문의 : 24시간 운영</p>
+          </div>
+        </div>
+      </section>
+      <section id="section_5">
+        <div class="section_5_box">
+          <div class="section_5_box_left">
+            <h2>공지시항</h2>
+            <p>
+              <a href="#none"> 더보기 > </a>
+            </p>
+          </div>
+          <div class="section_5_box_right">
+            <ul class="section_5_text">
+              <li>
+                <a href="#none">
+                  도메인, SSL 보안인증서 신청에 대한 주소검색 관련 장애 안내
+                  <span> 2022-10-16 </span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  정기점검 안내
+                  <span> 2022-10-11 </span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  [공지] biz, info 국제도메인 가격인상 안내
+                  <span> 2022-10-06 </span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  윈도우 웹호스팅 서버 보안 업데이트 안내
+                  <span> 2022-09-17 </span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  정기점검 안내
+                  <span> 2022-09-13 </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div id="footer_1">
+        <div class="footer_1_box">
+          <ul class="footer_1_main">
+            <li>
+              <a href="#none" class="footer_1_main_title"> 도메인
+              </a>
+              <ul class="footer_1_sub">
+                <li>
+                  <a href="#none">도메인 검색</a>
+                </li>
+                <li>
+                  <a href="#none">도메인 연장</a>
+                </li>
+                <li>
+                  <a href="#none">도메인 기관이전</a>
+                </li>
+                <li>
+                  <a href="#none">스마트스토어 도메인 연결</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="footer_1_main_title"> 웹호스팅 </a>
+              <ul class="footer_1_sub">
+                <li>
+                  <a href="#none">리눅스 웹호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">워드프레스 웹호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">무제한 웹호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">단독 웹호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">이미지 호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">무료 호스팅</a>
+                </li>
+                <li>
+                  <a href="#none">웹호스팅 비교하기</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none" class="footer_1_main_title"> 닷홈빌더 </a>
+              <ul class="footer_1_sub">
+                <li>
+                  <a href="#none">닷홈빌더 신청</a>
+                </li>
+                <li>
+                  <a href="#none">요금제</a>
+                </li>
+                <li>
+                  <a href="#none">템플릿</a>
+                </li>
+                <li>
+                  <a href="#none">기능</a>
+                </li>
+                <li>
+                  <a href="#none">유지보수 서비스</a>
+                </li>
+                <li>
+                  <a href="#none">홈페이지 빌더 리뉴얼</a>
+                </li>
+            </li>
+          </ul>
+          <li>
+            <a href="#none" class="footer_1_main_title"> IDC </a>
+            <ul class="footer_1_sub">
+              <li>
+                <a href="#none">KT 클라우드</a>
+              </li>
+              <li>
+                <a href="#none">임대형 서버호스팅</a>
+              </li>
+              <li>
+                <a href="#none">구매형 서버호스팅</a>
+              </li>
+              <li>
+                <a href="#none">코로케이션</a>
+              </li>
+              <li>
+                <a href="#none">모니터링 서비스</a>
+              </li>
+              <li>
+                <a href="#none">보안 서비스</a>
+              </li>
+              <li>
+                <a href="#none">로드밸런싱 서비스</a>
+              </li>
+              <li>
+                <a href="#none">1:1 서버관리 서비스</a>
+              </li>
+              <li>
+                <a href="#none">소프트웨어 임대</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="footer_1_main_title"> 웹메일 </a>
+            <ul class="footer_1_sub">
+              <li>
+                <a href="#none">베이직 웹메일</a>
+              </li>
+              <li>
+                <a href="#none">무제한 웹메일</a>
+              </li>
+              <li>
+                <a href="#none">기업보안 웹메일</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="footer_1_main_title"> 보안 </a>
+            <ul class="footer_1_sub">
+              <li>
+                <a href="#none">SSL 보안 인증서</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="footer_1_main_title"> 고객센터 </a>
+            <ul class="footer_1_sub">
+              <li>
+                <a href="#none">공지사항</a>
+              <li>
+                <a href="#none">서비스 매뉴얼</a>
+              </li>
+              <li>
+                <a href="#none">자주 묻는 질문과 답변</a>
+              </li>
+              <li>
+                <a href="#none">1:1 문의</a>
+              </li>
+              <li>
+                <a href="#none">IDC센터</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="footer_1_main_title">
+              마이닷홈
+            </a>
+            <ul class="footer_1_sub">
+              <li>
+                <a href="#none">도메인 관리</a>
+              </li>
+              <li>
+                <a href="#none">DNS 관리</a>
+              </li>
+              <li>
+                <a href="#none">호스팅 관리</a>
+              </li>
+              <li>
+                <a href="#none">이미지호스팅 관리</a>
+              </li>
+              <li>
+                <a href="#none">닷홈빌더 관리</a>
+              </li>
+              <li>
+                <a href="#none">트래픽 관리</a>
+              </li>
+              <li>
+                <a href="#none">웹메일 관리</a>
+              </li>
+              <li>
+                <a href="#none">부가 관리</a>
+              </li>
+              <li>
+                <a href="#none">만료 알림내역</a>
+              </li>
+              <li>
+                <a href="#none">정기결제 관리</a>
+              </li>
+              <li>
+                <a href="#none">결제내역 관리</a>
+              </li>
+              <li>
+                <a href="#none">소유권 이전</a>
+              </li>
+              <li>
+                <a href="#none">회원정보 관리</a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer_2">
+        <ul class="footer_2_menu">
+          <li>
+            <a href="#none">회사소개</a>
+          </li>
+          <li>
+            <a href="#none">이용약관</a>
+          </li>
+          <li>
+            <a href="#none">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="#none">이메일 무단수집 거부</a>
+          </li>
+          <li>
+            <a href="#none">이메일</a>
+          </li>
+        </ul>
+        <div class="footer_icon">
+          <a href="#none">
+            <img src="./img/facebook_f.png" alt="페이스북">
+          </a>
+          <a href="#none">
+            <img src="./img/blog_b.png" alt="페이스북">
+          </a>
+        </div>
+      </div>
+      <div id="footer_3">
+        <div class="footer_3_top">
+          <div class="footer_3_top_left">
+            <h5 class=" footer_small_title">본사</h5>
+            <p class="footer_small_text">애니큐어 주식회사 | 대표자 목현수 | 성남시 분당구 장미로36 인터넷통신센터 5층 애니큐어 주식회사</p>
+            <!--
+                <span>애니큐어 주식회사 </span> 
+                <span>대표자 목현수</span>
+              <span>성남시 분당구 장미로36 인터넷통신센터 5층 애니큐어 주식회사</span> -->
+            <p>사업자등록번호 129-81-95578 | 통신판매신고번호 경기성남-2007-281</p>
+          </div>
+          <div class="footer_3_top_right">
+            <h5 class=" footer_small_title">연구소</h5>
+            <p class="footer_small_text">경기도 성남시 분당구 장미로36 인터넷통신센터 5층</p>
+            <p>호스팅기술연구소</p>
+            <div class="footer_3_logo">
+              <img src="./img/f-award1.png" alt="award1">
+              <img src="./img/f-award2.png" alt="award2">
+              <a href="#none">
+                <img src="./img/kisa_logo.png" alt="kisa_logo">
+              </a>
+              <a href="#none">
+                <img src="./img/siteSealImage.gif" alt="sitesea">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_3_bottom">
+          <p>Copyright ⓒ 2002 - 2022 Anysecure Co., Ltd, All Rights Reserved. [ 사업자정보확인 ]</p>
+          <img src="./img/logo_dothome.png" alt="dothomelogo">
+          <img src="./img/newlogo.png" alt="newlogo">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $('.sidebar').on('click', function () {
+      $('body').addClass('active');
+    });
+    $('.side-open').on('click', function () {
+      $('body').removeClass('active');
+    });
+    $('.footer_1_main_title').on('click', function () {
+      $(this).toggleClass('active');
+    });
+  </script>
+</body>
+
+</html>

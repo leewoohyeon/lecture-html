@@ -1,0 +1,29 @@
+/* 상하애니메이션:위에서센터, 아래에서센터로 */
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.overlay:before, .overlay:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: .3s;
+}
+.overlay:before {
+  top: 0;
+}
+.overlay:after{
+  bottom: 0;
+
+}
+.overlay.active:before, 
+.overlay.active:after {
+  height: 50%;
+}

@@ -1,0 +1,30 @@
+/* main:section_1 */
+.model_sub_text {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+/* marin:section_2 */
+.sec_2_phantom {
+  background: #191818;
+}
+.sec_2_phantom_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.sec_2_phantom_inner div h3, .sec_2_phantom_inner div p {
+  font-family: 'Gotham', sans-serif;
+}
+.sec_2_phantom_inner div h3 {
+  font-size: 2.3rem;
+}
+.sec_2_phantom_inner div p {
+  font-size: 1.0rem;
+}
+
+
+
+/* marin:section_2 */
+/* marin:section_2 */
+/* marin:section_2 */
