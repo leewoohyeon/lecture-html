@@ -4,7 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+#body {
   font-family: "Pretendard";
   font-weight: 400;
 }
@@ -63,6 +63,10 @@ input[id="trigger"]:checked + label span:nth-child(3) {
   right: -100%;
   transition: 0.3s;
   z-index: 1;
+  /* visibility: hidden; */
+}
+.sidebar.active {
+  visibility: visible;
 }
 input[id="trigger"]:checked ~ .sidebar {
   right: 0;
@@ -71,6 +75,7 @@ input[id="trigger"]:checked ~ .sidebar {
   position: absolute;
   top: 100px;
   left: 50%;
+  transform: translateX(-50%);
 }
 .sidebar li a {
   display: block;
@@ -81,7 +86,7 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 /* input[id=trigger]:checked+label {
   right: 200px;
-} */
+}
 /*  */
 .hvr-underline-from-left {
   display: inline-block;
@@ -108,7 +113,9 @@ input[id="trigger"]:checked ~ .sidebar {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
   right: 0;
 }
 /* Main:Section_1 */
@@ -264,7 +271,7 @@ input[id="trigger"]:checked ~ .sidebar {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.sec_4_design > div {
+.sec_4_de_photo {
   position: relative;
   overflow: hidden;
   background-color: #000;
@@ -273,10 +280,10 @@ input[id="trigger"]:checked ~ .sidebar {
   height: 230px;
   margin-bottom: 20px;
 }
-.sec_4_design > div:hover > img {
+.sec_4_de_photo:hover > img {
   opacity: 0.45;
 }
-.sec_4_design > div p {
+.sec_4_de_photo p {
   font-size: 1.3em;
   color: var(--white);
   position: absolute;
@@ -286,10 +293,10 @@ input[id="trigger"]:checked ~ .sidebar {
   display: none;
   transition: 0.25s;
 }
-.sec_4_design > div:hover > p {
+.sec_4_de_photo:hover p {
   display: block;
 }
-/* sec_4:photo part  */
+/* sec_4:photo part */
 .sec_4_web .sec_4_photo {
   border-radius: 15px;
   margin-right: 15px;
@@ -311,10 +318,81 @@ input[id="trigger"]:checked ~ .sidebar {
 .sec_4_web .sec_4_photo:hover {
   background-position: bottom;
 }
+.sec_4_photo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .sec_4_de_photo img {
   width: inherit;
   height: inherit;
   object-fit: cover;
+}
+/* sec_4 modal */
+.modal_design {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+}
+.modal_de_contents {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  */
+.close-modal {
+  position: absolute;
+  left: 80%;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-modal:after {
+  content: "\e921";
+  font-family: xeicon !important;
+}
+.modal_de_contents img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-size: 1.8em;
+}
+.left {
+  left: 10%;
+}
+.left i {
+  vertical-align: middle;
+  transform: translate(-2px, -2px);
+}
+.right {
+  right: 10%;
+}
+.right i {
+  vertical-align: middle;
+  transform: translate(2px, -2px);
 }
 /* Footer */
 #footer {
@@ -348,7 +426,10 @@ input[id="trigger"]:checked ~ .sidebar {
   border-radius: 50%;
   margin-left: 7px;
 }
-
+.top_button:hover::after {
+  background-color: #000;
+  color: #f2f2f2;
+}
 /* animation */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;

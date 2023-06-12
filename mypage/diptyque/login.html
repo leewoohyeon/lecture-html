@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diptyque_korea</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/newlogin.css">
+    <link rel="stylesheet" href="./css/procuct.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./slick-1.8.1/slick/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+    <!-- menu.js -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/newlogin.js"></script>
+    <script src="./js/login.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!--  icon -->
+    <script src="https://kit.fontawesome.com/1b5e252510.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="gnb">
+            <a href="./index.html">
+                <h1 class="header_logo">
+                    <img src="./img/logo/logo_white.png" alt="logo">
+            </a>
+            </h1>
+            <ul class="main_menu">
+                <li>
+                    <a href="#">
+                        전체
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        BEST
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        NEW
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        향수
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        헤어/바디
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        캔들/디퓨저
+                    </a>
+                </li>
+            </ul>
+            <ul class="sub_menu">
+                <li>
+                    <ul class="sub_menu_list">
+                        <li>
+                            <a href="./productlist.html">
+                                오드퍼퓸
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                오드뚜왈렛
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                기타향수
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sub_menu_list">
+                        <li>
+                            <a href="#">
+                                헤어케어
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                바디케어
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                핸드케어
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sub_menu_list">
+                        <li>
+                            <a href="#">
+                                캔들
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                디퓨저
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="./login.html">
+                    <img src="./img/icon/login_white_icon.png" alt="login_icon">
+                    로그인
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="login_box">
+            <div class="login_main_logo">
+                <a href="./index.html">
+                    <img src="./img/logo/logo.png" alt="login_logo">
+                </a>
+            </div>
+            <ul class="login_menu">
+                <li class="id_login">
+                    회원
+                </li>
+                <li class="once_login">
+                    비회원
+                </li>
+            </ul>
+            <div class="member">
+                <form action="" id="login">
+                    <label for="user_id">
+                        <input type="text" placeholder="아이디 또는 이메일" class="input_box" name="user_id" id="user_id">
+                    </label>
+                    <label for="user_pw">
+                        <input type="password" placeholder="비밀번호" class="input_box" name="user_pw" id="user_pw">
+                    </label>
+                    <div class="check">
+                        <input type="checkbox" name="" value="" class="check_box">
+                        <label for="">
+                            로그인 상태 유지
+                        </label>
+                    </div>
+                    <button class="login_button" type="submit">
+                        Login
+                    </button>
+                </form>
+            </div>
+            <div class="non-member">
+                <p>비회원의 경우, 주문번호로 조회가 가능합니다.</p>
+                <form action="" id="non-member_login">
+                    <label for="non-member_name">
+                        <input type="text" placeholder="주문자 이름" class="input_box" name="non-member_name" id="non-member_name">
+                    </label>
+                    <label for="non-member_number">
+                        <input type="text" placeholder="주문번호" class="input_box" name="non-member_number" id="non-member_number" oninput="autoHyphen2(this)" maxlength="15">
+                    </label>
+                    <label for="non-member_pw">
+                        <input type="password" placeholder="비회원주문 비밀번호" class="input_box" name="non-member_pw" id="non-member_pw">
+                    </label>
+                    <button class="order_button login_button" type="submit">
+                        주문조회
+                    </button>
+                </form>
+            </div>
+            <ul class="find_login_area">
+                <li>
+                    <a href="./newlogin.html">
+                        회원가입
+                    </a>
+                </li>
+                <li>아이디찾기</li>
+                <li>비밀번호찾기</li>
+            </ul>
+            <p class="sns_login_title">
+                간편하게 로그인하기
+            </p>
+            <ul class="sns_login_area">
+                <li>
+                    <img src="./img/icon/naver_icon.png" alt="naver_login_icon">
+                    <p>
+                        네이버
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/icon/kakao_icon.png" alt="kakao_login_icon">
+                    <p>
+                        카카오
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/icon/facebook_icon.png" alt="facebook_login_icon">
+                    <p>
+                        페이스북
+                    </p>
+                </li>
+            </ul>
+    </main>
+    <footer id="footer">
+        <div class="footer_box">
+            <ul class="corp_area">
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보 보호 정책 및 쿠키</a>
+                </li>
+            </ul>
+            <div class="footer_info">
+                <div class="info">
+                    <a href="tel:0507-1391-7494">0507-1391-7494</a>
+                    <p>
+                        (월-일: 11:00 - 21:00/ 공휴일 휴무 )
+                    </p>
+                    <address>
+                        서울특별시 강남구 가로수길 15
+                    </address>
+                </div>
+                <div class="footer_sns">
+                    <h3>diptyque의 공식 SNS에서 <br> 최신소식을 확인하세요.</h3>
+                    <p>
+                        SNS를 통해 diptyque 관련 뉴스, 이벤트 제품정보 등 <br />
+                        최신정보를 누구보다 먼저 만나보시기 바랍니다.
+                    </p>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                COPYRIGHT©2023 DIPTYQUEPARIS. ALL RIGHTS RESERVED
+                <p>
+                    이 사이트는 취업을 목적으로 포트폴리오용으로 제작되었으며,<br>사이트 제작에 사용된 이미지나 로고는 각 사이트에 저작권이 있습니다.
+                </p>
+            </div>
+            <div class="footer_logo">
+                <a href="./index.html">
+                    <img src="./img/logo/logo_white.png" alt="footer_logo_img">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

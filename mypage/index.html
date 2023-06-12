@@ -16,7 +16,11 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/web.css">
+  <!-- JQUERY -->
+  <script src="./js/jquery-3.6.4.js"></script>
+  <script src="./js/sidebar_menu.js"></script>
 </head>
+
 <body>
   <div class="wrap">
     <header id="header">
@@ -25,13 +29,16 @@
       </h1>
       <div class="hamberger">
         <input type="checkbox" id="trigger">
-        <label for="trigger">
+        <label for="trigger" class="trigger">
           <span></span>
           <span></span>
           <span></span>
         </label>
         <div class="sidebar">
-          <ul class="">
+          <ul class="sidebar_menu">
+            <li>
+              <a href="#home" class="hvr-underline-from-left">Home</a>
+            </li>
             <li>
               <a href="#about" class="hvr-underline-from-left">About</a>
             </li>
@@ -46,7 +53,7 @@
       </div>
     </header>
     <main id="main">
-      <section class="sec_1">
+      <section class="sec_1" id="home">
         <div class="sec_1_inner">
           <div class="sec_1_textbox fadeInUp">
             <h1>
@@ -134,8 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="sec_2" id="about
-      ">
+      <section class="sec_2" id="about">
         <div class="sec_2_inner">
           <div class="sec_2_textbox">
             <h1 class="">
@@ -290,7 +296,7 @@
             </div>
           </div>
       </section>
-      <section class="sec_3" id="portfolio">
+      <section class="sec_3">
         <div class="sec_3_top slide">
           <div class="sec_3_contents">
             <div class="sec_3_img">
@@ -948,7 +954,7 @@
           </div>
         </div>
       </section>
-      <section class="sec_4">
+      <section class="sec_4" id="portfolio">
         <div class="sec_4_inner">
           <h1>
             PORTFOLIO
@@ -959,6 +965,7 @@
             </h3>
             <div class="sec_4_contents sec_4_web">
               <div class="sec_4_photo">
+                <a href="./diptyque/index.html"></a>
               </div>
               <div>
                 <h3>
@@ -994,6 +1001,7 @@
             </div>
             <div class="sec_4_contents sec_4_web">
               <div class="sec_4_photo">
+                <a href="./rolls-royce/index.html"></a>
               </div>
               <div>
                 <h3>
@@ -1033,46 +1041,151 @@
               DESIGN
             </h3>
             <div class="sec_4_contents sec_4_design">
-              <div class="sec_4_de_photo">
-                <img src="./img/design/tenwells_sns_event_1000x1000_1.jpeg" alt="tenwells_sns_event_img">
-                <p>
-                  SNS
-                </p>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="./img/design/tenwells_sns_event_1000x1000_1.jpeg" alt="tenwells_sns_event_img">
+                  <p>
+                    SNS
+                  </p>
+                </div>
+                <div class="modal_design">
+                  <div class="modal_de_contents">
+                    <span class="close-modal">
+                    </span>
+                    <img src="./img/design/tenwells_modal.png" alt="">
+                    <button class="arrow-button left">
+                      <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="arrow-button right">
+                      <i class="xi-angle-right-min"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="sec_4_de_photo">
-                <img src="./img/design/tenwells_sns.png" alt="tenwells_sns">
-                <p>
-                  SNS
-                </p>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="./img/design/tenwells_sns.png" alt="tenwells_sns">
+                  <p>
+                    SNS
+                  </p>
+                </div>
+                <div class="modal_design">
+                  <div class="modal_de_contents">
+                    <span class="close-modal">
+                    </span>
+                    <img src="./img/design/tenwells_sns.png" alt="">
+                    <button class="arrow-button left">
+                      <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="arrow-button right">
+                      <i class="xi-angle-right-min"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="sec_4_de_photo">
-                <img src="img/design/tenwells_menu.png" alt="tenwells_menu">
-                <p>
-                  메뉴판
-                </p>
-              </div class="sec_4_de_photo">
-              <div class="sec_4_de_photo">
-                <img src="img/design/eatmall_butterscotchcoffee_detailpage_1.jpg" alt="eatmall_butterscotchcoffee_detailimg">
-                <p>
-                  상세페이지
-                </p>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="img/design/tenwells_menu.png" alt="tenwells_menu">
+                  <p>
+                    메뉴판
+                  </p>
+                </div>
+                <div class="modal_design">
+                    <div class="modal_de_contents">
+                      <span class="close-modal">
+                      </span>
+                      <img src="img/design/tenwells_menu.png" alt="">
+                      <button class="arrow-button left">
+                        <i class="xi-angle-left-min"></i>
+                      </button>
+                      <button class="arrow-button right">
+                        <i class="xi-angle-right-min"></i>
+                      </button>
+                    </div>
+                  </div>
               </div>
-              <div class="sec_4_de_photo">
-                <img src="img/design/eatmall_redbull_detail_1.jpg" alt="eatmall_redbull_detail_img">
-                <p>
-                  상세페이지
-                </p>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="img/design/eatmall_butterscotchcoffee_detailpage_1.jpg"
+                    alt="eatmall_butterscotchcoffee_detailimg">
+                  <p>
+                    상세페이지
+                  </p>
+                </div>
+                <div class="modal_design">
+                  <div class="modal_de_contents">
+                    <span class="close-modal">
+                    </span>
+                    <img src="img/design/tenwells_menu.png" alt="">
+                    <button class="arrow-button left">
+                      <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="arrow-button right">
+                      <i class="xi-angle-right-min"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="sec_4_de_photo">
-                <img src="img/design/eatmall_coffee_banner_1.jpg" alt="샘플이미지">
-                <p>
-                  배너
-                </p>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="img/design/eatmall_redbull_detail_1.jpg" alt="eatmall_redbull_detail_img">
+                  <p>
+                    상세페이지
+                  </p>
+                </div>
+                <div class="modal_design">
+                  <div class="modal_de_contents">
+                    <span class="close-modal">
+                    </span>
+                    <img src="img/design/tenwells_menu.png" alt="">
+                    <button class="arrow-button left">
+                      <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="arrow-button right">
+                      <i class="xi-angle-right-min"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="sec_4_de_photo">
+                  <img src="img/design/eatmall_coffee_banner_1.jpg" alt="샘플이미지">
+                  <p>
+                    배너
+                  </p>
+                </div>
+                <div class="modal_design">
+                  <div class="modal_de_contents">
+                    <span class="close-modal">
+                    </span>
+                    <img src="img/design/tenwells_menu.png" alt="">
+                    <button class="arrow-button left">
+                      <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="arrow-button right">
+                      <i class="xi-angle-right-min"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- <button class="open-modal">Open Modal</button>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-modal">
+            <i class="xi-close">
+            </i>
+          </span>
+          <img src="./img/design/tenwells_sns_event.png" alt="">
+          <button class="arrow-button left"></button>
+          <button class="arrow-button right"></button>
+        </div> -->
+      </div>
+
     </main>
     <footer id="footer">
       <div class="footer_inner" id="contact">

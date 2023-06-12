@@ -1,0 +1,156 @@
+.login_box {
+  color: #333;
+  width: 700px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.login_menu {
+  display: flex;
+  padding: 50px 0;
+}
+.id_login, .once_login {
+  width: 350px;
+  padding: 20px 0;
+  text-align: center;
+  background: #292929;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.login_main_logo {
+  text-align: center;
+}
+.once_login{
+  background: #fff;
+  border: 1px solid #292929;
+  color: #333;
+}
+.input_box {
+  width: 700px;
+  padding: 20px 15px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.check {
+  padding: 0 0 30px 0;
+  display: flex;
+  align-items: center;
+}
+.check_box {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #c9c8c8;
+}
+.login_button {
+  width: 700px;
+  height: 65px;
+  text-align: center;
+  background: #292929;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.find_login_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 25px 0;
+}
+.find_login_area li {
+  line-height: 23px;
+}
+.find_login_area li::after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #c9c8c8;
+  display: block;
+  float: right;
+  margin: 0 75px;
+}
+.find_login_area li:nth-of-type(3):after {
+  display: none;
+}
+.find_login_area a {
+  color: #333;
+}
+.sns_login_title {
+  margin: 95px 0 35px 0;
+  text-align: center;
+}
+.sns_login_title::before, .sns_login_title::after  {
+  content: '';
+  width: 250px;
+  height: 1px;
+  display: inline-block;
+  background: #292929;
+  margin-bottom: 4px;
+}
+.sns_login_title::before {
+  margin-right: 10px;
+}
+.sns_login_title::after {
+  margin-left: 10px;
+}
+.sns_login_area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.sns_login_area li {
+  width: 45px;
+  height: 45px;
+  margin: 0 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 13px;
+  color:#333;
+}
+.sns_login_area li img {
+  width: 45px;
+  height: 45px;
+}
+.sns_login_area li:nth-of-type(1) {
+  background: #03cf5d;
+}
+.sns_login_area li:nth-of-type(2) {
+  background: #fae100;
+}
+.sns_login_area li:nth-of-type(3) {
+  background: #1977f3;
+}
+.sns_login_area li p {
+  margin-top: -23px;
+}
+/* 비회원 부분 */
+.non-member {
+display: none;
+}
+.non-member.active {
+  display: block;
+}
+.non-member .login_menu {
+  padding-bottom: 35px;
+}
+.non-member p {
+  margin-bottom: 35px;
+  color: #333;
+}
+/* .non-member .id_login {
+  background: #fff;
+  color: #333;
+  border: 1px solid #292929;
+}
+.non-member .once_login {
+  background: #333;
+  color: #fff;
+  border: none;
+} */
