@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Pretendard";
   font-weight: 400;
 }
 /* Header */
-
 /* Header:hamberger */
 input[id="trigger"] {
   display: none;
@@ -53,13 +55,14 @@ input[id="trigger"]:checked + label span:nth-child(3) {
 }
 /* sidebar */
 .sidebar {
-  width: 250px;
+  width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: blanchedalmond;
+  background-color: #fffefe;
   top: 0;
-  right: -250px;
+  right: -100%;
   transition: 0.3s;
+  z-index: 1;
 }
 input[id="trigger"]:checked ~ .sidebar {
   right: 0;
@@ -67,17 +70,47 @@ input[id="trigger"]:checked ~ .sidebar {
 .sidebar ul {
   position: absolute;
   top: 100px;
+  left: 50%;
 }
 .sidebar li a {
   display: block;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 3em;
+  line-height: 3.5em;
+  text-align: center;
 }
 /* input[id=trigger]:checked+label {
   right: 200px;
 } */
-
+/*  */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 53px;
+  background: var(--black);
+  height: 3px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
 /* Main:Section_1 */
 .sec_1_inner {
   margin: 0 auto;
@@ -162,20 +195,9 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 /* Main:section_3 */
 .sec_3 {
-  width: 100%;
   height: 500px;
   overflow: hidden;
   position: relative;
-}
-.sec_3_top {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.slide {
-  animation: leftMove 10s infinite linear;
 }
 .sec_3_contents {
   display: flex;
@@ -186,6 +208,25 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 .sec_3_img > img {
   border-radius: 10px;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+/* slide_part */
+.slide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: leftMove 8s infinite linear;
+}
+.sec_3_middle {
+  top: 170px;
+  animation-duration: 7s;
+}
+.sec_3_bottom {
+  top: 340px;
+  animation-duration: 12s;
 }
 /* Main:section_4 */
 .sec_4_inner h1 {
@@ -248,6 +289,65 @@ input[id="trigger"]:checked ~ .sidebar {
 .sec_4_design > div:hover > p {
   display: block;
 }
+/* sec_4:photo part  */
+.sec_4_web .sec_4_photo {
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.sec_4_web:nth-of-type(1) .sec_4_photo {
+  background: url(../img/diptyque_page.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s;
+}
+.sec_4_web:nth-of-type(2) .sec_4_photo {
+  background: url(../img/rollsroyce_page.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s;
+}
+.sec_4_web .sec_4_photo:hover {
+  background-position: bottom;
+}
+.sec_4_de_photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+/* Footer */
+#footer {
+  height: 50px;
+}
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_right,
+.f_icon {
+  display: flex;
+  align-items: center;
+}
+.f_icon li a {
+  font-size: 1.8em;
+  margin-left: 7px;
+}
+.top_button::after {
+  /* content: "\e945"; */
+  content: "\e946";
+  font-family: xeicon !important;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-left: 7px;
+}
 
 /* animation */
 .fadeInUp {
@@ -289,18 +389,9 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 @keyframes leftMove {
   0% {
-    left: 0;
-  }
-  25% {
-    left: -20%
-  }
-  50% {
-    left: -50%
-  }
-  75% {
-    left: -100%
+    transform: translate(0);
   }
   100% {
-    left: -150%
+    transform: translate(-50%);
   }
 }
