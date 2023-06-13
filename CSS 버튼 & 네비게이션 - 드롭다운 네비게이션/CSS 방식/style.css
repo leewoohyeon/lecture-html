@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Noto+Sans:wght@300;500;700&family=Open+Sans:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1.5em;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* Resec CSS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-top: 0;
+}
+/* Dropdownload Navagation*/
+.program {
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  width: 1150px;
+  /* margin: auto; */
+}
+.inner h1 {
+  padding: 20px 0;
+  font-size: 23px;
+  border-bottom: 1px solid #eee;
+}
+.inner h2 {
+  padding: 20px 0;
+  font-size: 20px;
+}
+.items {
+  display: flex;
+  gap: 40px;
+}
+.item {
+  flex: 1;
+}
+.item-list {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 25px;
+}
+.item-list h4 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+.item:nth-of-type(1) .item-list {
+  background: #195fab;
+}
+.item:nth-of-type(2) .item-list {
+  background: #5049a9;
+}
+.item:nth-of-type(3) .item-list {
+  background: #8c66c1;
+}
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  margin: 3px;
+  width: 80px;
+  display: inline-block;
+}
+.btn.download {
+  width: 200px;
+}
+.item-desc {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.item-desc p {
+  text-align: center;
+}
+.item-desc ul {
+  list-style: none;
+  padding: 12px;
+  background: #f6f6f6;
+  margin-top: 10px;
+}
+.item-desc ul li::before {
+  content: "-";
+  margin-right: 5px;
+}
+.item:nth-of-type(1) .item-desc {
+  border: 3px solid #195fab;
+}
+.item:nth-of-type(2) .item-desc {
+  border: 3px solid #5049a9;
+}
+.item:nth-of-type(3) .item-desc {
+  border: 3px solid #8c66c1;
+}
+
+/*  */
+/* 01 - Show hide Function : show Hide */
+/* .item-desc {
+  display: none;
+}
+.item:hover .item-desc {
+  display: block;
+} */
+
+/* 02 - Show hide Function : show Hide */
+/* .item-desc {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: 0.5s;
+}
+.item:hover .item-desc {
+  height: 200px;
+  padding: 5px 15px;
+} */
+/* 01,02는 아래 요소가 있으면 밀리는 상황이 생김 */
+
+/* 03 - Show hide Function : Position */
+.item {
+  position: relative;
+}
+.item-desc {
+  position: absolute;
+  background-color: #fff;
+  display: none;
+}
+.item:hover .item-desc {
+  display: block;
+} 
