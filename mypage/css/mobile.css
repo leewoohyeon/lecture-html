@@ -1,8 +1,15 @@
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   /* Header */
   #header {
     height: 65px;
     margin: 5px 0;
+  }
+  label[for="trigger"] {
+    top: 20px;
+    right: 10px;
   }
   #header .header_logo img {
     width: 58px;
@@ -13,38 +20,23 @@
     width: 100%;
     height: 450px;
   }
+  .rotate_text {
+    right: 16px;
+    top: 323px;
+    transform: scale(1);
+  }
   .sec_1_inner {
     width: 728px;
   }
   .sec_1_textbox {
     top: 100px;
   }
-  .sec_1_textbox h1 {
-    font-size: 4.25em;
-    padding: 30px 0;
-  }
-  .sec_1_textbox span {
-    min-width: 7px;
-    letter-spacing: -8px;
-  }
-  .sec_1_textbox p {
-    font-size: 1.2em;
-  }
-  .rotate_text {
-    right: 16px;
-    top: 323px;
-    width: 100px;
-    height: 100px;
-  }
-  /* Main:section_2 */
-  .sec_2 {
-    margin: 38px 0;
-  }
+  /* Main:setion_2 */
   .sec_2_inner {
     width: 728px;
   }
-  .sec_2_textbox h1 {
-    font-size: 3.5em;
+  .sec_2_contents {
+    flex-direction: column;
   }
   .sec_2_textbox span {
     font-size: 4em;
@@ -55,39 +47,33 @@
     padding: 45px 0;
   }
   /*  */
-  .info_box {
-    margin-bottom: 55px;
-  }
-  .info_title {
-    font-size: 1.7em;
-  }
-  .info_contents {
-    font-size: 1.16em;
-  }
   .info_contents > div,
   .info_contents > p {
     margin-bottom: 35px;
-  }
-  .skill-contents > div p:nth-child(2) {
-    margin: 0 10px;
   }
   .career-contents p {
     margin-top: 18px;
   }
   /* Main:section_3 */
+  .sec_3 {
+    height: 500px;
+  }
   .sec_3_img {
     width: 230px;
     height: 130px;
-  }
-  .sec_3_text {
-    width: 6em;
-    font-size: 2.15em;
   }
   /* .sec_3_text span {
       display: inline-block;
       font-size: 2em;
       letter-spacing: -3px;
     } */
+  /* slide_part */
+  .sec_3_middle {
+    top: 170px;
+  }
+  .sec_3_bottom {
+    top: 340px;
+  }
   /* Main:section_4 */
   .sec_4_inner {
     width: 728px;
@@ -95,15 +81,51 @@
   }
   .sec_4_web .sec_4_photo {
     height: 330px;
+    flex: 1;
+  }
+  .sec_4_web div:nth-of-type(2) h3 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  .sec_4_textbox p {
+    font-size: 0.95em;
+    line-height: 2em;
+  }
+  .sec_4_info {
+    margin-top: 10px;
   }
   /* sec_4:design */
   .sec_4_de_photo {
     width: 230px;
     height: 230px;
   }
+  .sec_4_designbox {
+    margin-top: 0px;
+  }
+  .sec_4_design {
+    height: auto;
+    gap: 20px 0;
+  }
+  /* sec_4_modal */
+  .modal_container {
+    width: calc(100% - 50px);
+  }
+  .modal_contents img {
+    width: 90%;
+  }
+  .close-btn {
+    top: 6%;
+    right: 1%;
+  }
   /* Footer */
   .footer_inner {
     width: 728px;
     margin: 0 auto;
+  }
+  .f_icon li a {
+    margin-left: 7px;
+  }
+  .top_button::after {
+    margin-left: 7px;
   }
 }

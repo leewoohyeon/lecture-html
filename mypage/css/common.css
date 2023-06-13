@@ -4,9 +4,12 @@
 html {
   scroll-behavior: smooth;
 }
-#body {
+body {
   font-family: "Pretendard";
   font-weight: 400;
+}
+body.active {
+  overflow: hidden;
 }
 /* Header */
 /* Header:hamberger */
@@ -19,8 +22,6 @@ label[for="trigger"] {
   display: inline-block;
   position: absolute;
   cursor: pointer;
-  top: 20px;
-  right: 10px;
   transition: 0.3s;
 }
 label[for="trigger"] span {
@@ -87,7 +88,7 @@ input[id="trigger"]:checked ~ .sidebar {
 /* input[id=trigger]:checked+label {
   right: 200px;
 }
-/*  */
+/*  hover Event*/
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
@@ -127,6 +128,23 @@ input[id="trigger"]:checked ~ .sidebar {
 .sec_1_textbox {
   position: absolute;
 }
+.sec_1_textbox h1 {
+  font-size: 4.25em;
+  padding: 30px 0;
+}
+.sec_1_textbox span {
+  min-width: 7px;
+  letter-spacing: -8px;
+}
+.sec_1_textbox p {
+  font-size: 1.2em;
+}
+.rotate_text {
+  right: 16px;
+  top: 323px;
+  width: 100px;
+  height: 100px;
+}
 .f_times {
   font-family: Times;
 }
@@ -139,6 +157,9 @@ input[id="trigger"]:checked ~ .sidebar {
   height: 100%;
 }
 /* Main:Section_2 */
+.sec_2 {
+  margin: 38px 0;
+}
 .sec_2_inner {
   margin: 0 auto;
   padding: 0 10px;
@@ -150,23 +171,29 @@ input[id="trigger"]:checked ~ .sidebar {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   background: linear-gradient(
-    283deg,
+    83deg,
     rgba(246, 73, 40, 1) 0%,
     rgba(255, 148, 162, 1) 100%
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.sec_2_topbox {
-  width: 100%;
+.sec_2_textbox h1 {
+  font-size: 3.5em;
+}
+.sec_2_textbox span {
+  font-size: 4em;
+}
+.sec_2_topbox p {
+  line-height: 1.8em;
+  font-size: 1.3em;
+  padding: 45px 0;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
 .sec_2_topbox img {
   display: block;
-  margin: 0 auto;
-}
-.sec_2_topbox p {
-  width: 80%;
-  text-align: center;
   margin: 0 auto;
 }
 /* sec_2_bottom */
@@ -177,6 +204,13 @@ input[id="trigger"]:checked ~ .sidebar {
 .info_box {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 55px;
+}
+.info_title {
+  font-size: 1.7em;
+}
+.info_contents {
+  font-size: 1.16em;
 }
 .info_title,
 .info_contents {
@@ -202,7 +236,6 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 /* Main:section_3 */
 .sec_3 {
-  height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -212,6 +245,8 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 .sec_3_text {
   text-align: center;
+  width: 6em;
+  font-size: 2.15em;
 }
 .sec_3_img > img {
   border-radius: 10px;
@@ -244,11 +279,12 @@ input[id="trigger"]:checked ~ .sidebar {
 .sec_4_container > h3 {
   font-size: 2em;
   margin: 50px 0;
+  font-weight: 700;
 }
-.sec_4_web > div h3 {
+/* .sec_4_web > div h3 {
   font-size: 1.25em;
   margin-bottom: 1px;
-}
+} */
 .sec_4_contents {
   display: flex;
 }
@@ -256,16 +292,13 @@ input[id="trigger"]:checked ~ .sidebar {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  cursor: pointer;
+}
+.sec_4_photo {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .sec_4_web div {
   flex: 1;
-}
-.sec_4_textbox p {
-  font-size: 0.95em;
-  line-height: 2em;
-}
-.sec_4_info {
-  margin-top: 10px;
 }
 .sec_4_design {
   justify-content: space-between;
@@ -275,10 +308,9 @@ input[id="trigger"]:checked ~ .sidebar {
   position: relative;
   overflow: hidden;
   background-color: #000;
-  cursor: pointer;
   width: 230px;
   height: 230px;
-  margin-bottom: 20px;
+  border-radius: 10px;
 }
 .sec_4_de_photo:hover > img {
   opacity: 0.45;
@@ -329,42 +361,58 @@ input[id="trigger"]:checked ~ .sidebar {
   object-fit: cover;
 }
 /* sec_4 modal */
-.modal_design {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   display: none;
+  overflow: auto;
 }
-.modal_de_contents {
-  display: flex;
-  justify-content: center;
-  width: 80%;
+.modal_container {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  height: 70%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* modal scroll-bar 없애기 */
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
 }
-/*  */
-.close-modal {
+/* modal scroll-bar 없애기 */
+.modal_container::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.modal_contents {
   position: absolute;
-  left: 80%;
-  font-size: 24px;
-  color: #fff;
-  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.modal_contents img {
+  display: block;
+  margin: 0 auto;
+}
+.close-btn {
+  border: none;
+  outline: none;
+  position: absolute;
   cursor: pointer;
+  background-color: transparent;
 }
-.close-modal:after {
-  content: "\e921";
-  font-family: xeicon !important;
-}
-.modal_de_contents img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
+.close-btn i {
+  font-size: 23px;
+  color: #fff;
+  font-weight: 700;
 }
 .arrow-button {
   position: absolute;
@@ -380,26 +428,10 @@ input[id="trigger"]:checked ~ .sidebar {
   color: #fff;
   font-size: 1.8em;
 }
-.left {
-  left: 10%;
-}
-.left i {
-  vertical-align: middle;
-  transform: translate(-2px, -2px);
-}
-.right {
-  right: 10%;
-}
-.right i {
-  vertical-align: middle;
-  transform: translate(2px, -2px);
-}
 /* Footer */
-#footer {
-  height: 50px;
-}
 .footer_inner {
   display: flex;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
 }
@@ -410,10 +442,8 @@ input[id="trigger"]:checked ~ .sidebar {
 }
 .f_icon li a {
   font-size: 1.8em;
-  margin-left: 7px;
 }
 .top_button::after {
-  /* content: "\e945"; */
   content: "\e946";
   font-family: xeicon !important;
   display: inline-block;
