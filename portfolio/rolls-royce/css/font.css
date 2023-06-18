@@ -1,0 +1,53 @@
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"),
+    url("./woff2/Pretendard-Bold.woff2") format("woff2"),
+    url("./woff/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"),
+    url("./woff2/Pretendard-Regular.woff2") format("woff2"),
+    url("./woff/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"),
+    url("./woff2/Pretendard-Light.woff2") format("woff2"),
+    url("./woff/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"),
+    url("./woff2/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("./woff/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../font/Helvetica.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
