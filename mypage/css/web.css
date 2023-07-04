@@ -96,6 +96,7 @@ label[for="trigger"] {
 /* Main:Seciton_4 */
 .sec_4_inner {
   margin: 0 auto;
+  padding: 0 10px;
 }
 .sec_4_web .sec_4_photo {
   height: 580px;

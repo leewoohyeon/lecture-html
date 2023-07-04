@@ -140,7 +140,7 @@ input[id="trigger"]:checked ~ .sidebar {
 .rotate_text img {
   position: absolute;
   left: calc((100% - 1921px) / 2 + 1597px);
-  bottom: calc((100% - 500px) / 2 + 10px );
+  bottom: calc((100% - 500px) / 2 + 10px);
   animation: rotatetext 10s linear infinite;
 }
 /* Main:Section_2 */
@@ -422,6 +422,11 @@ input[id="trigger"]:checked ~ .sidebar {
 .f_icon li a {
   font-size: 1.8em;
 }
+.kakao {
+  width: 25px;
+  height: 25px;
+  transform: translateY(1px);
+}
 .top_button::after {
   content: "\e946";
   font-family: xeicon !important;
@@ -433,7 +438,6 @@ input[id="trigger"]:checked ~ .sidebar {
   text-align: center;
   background-color: #f2f2f2;
   border-radius: 50%;
-  margin-left: 7px;
 }
 .top_button:hover::after {
   background-color: #000;
