@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 호버이펙트 - 아웃라인 텍스트</title>
+  <style>
+    body {
+      background-color: #000;
+      color:#fff;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn {
+      color: transparent;
+      text-decoration: none;
+      font-size: 10em;
+      font-weight: bold;
+      /* text-transform: uppercase; */
+      -webkit-text-stroke: 1px #fff;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .btn:before, .btn:after {
+      content: attr(date-text);
+      -webkit-text-stroke: 1px transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .3s;
+      opacity: 0;
+    }
+    .btn:before {
+      color: royalblue;
+    }
+    .btn:after {
+      color: crimson;
+    }
+    .btn:hover {
+      color: #fff;
+    }
+    .btn:hover::before, 
+    .btn:hover::after {
+      opacity: 1;
+    }
+    .btn:hover::before {
+      transform: translate(10px, -10px);
+    }
+    .btn:hover::after {
+      transform: translate(20px, -20px);
+    }
+  </style>
+</head>
+<body>
+  <a href="#none" class="btn" date-text="Portfolio">
+    Portfolio
+  </a>
+</body>
+</html>
