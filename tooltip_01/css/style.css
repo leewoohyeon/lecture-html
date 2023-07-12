@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip i {
+  font-size: 50px;
+  color: dodgerblue;
+}
+.tooltip span {
+  position: absolute;
+  background: rgba(0,0,0);
+  color: #fff;
+  width: 250px;
+  padding: 7px;
+  border-radius: 3px;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: none;
+}
+.tooltip span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(0,0,0);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+}
+.tooltip:hover span{
+  display: block;
+}
