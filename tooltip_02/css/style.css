@@ -1,0 +1,66 @@
+/* XEicon Cdn */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* 초기 셋팅 값 */
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/*  */
+body {
+  background-color: #000;
+}
+.sns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sns a {
+  color: #fff;
+  font-size: 18px;
+  margin: 5px;
+  position: relative;
+  text-align: center;
+}
+.sns a:before, 
+.sns a:after {
+  /* display: none; */
+  opacity: 0;
+  transition: .2s;
+  visibility: hidden;
+}
+.sns a:before {
+  content: attr(data-text);
+  position: absolute;
+  background-color: #777;
+  width: 58px;
+  height: 15px;
+  line-height: 16px;
+  color: #000;
+  font-size: 12px;
+  top: -20px;
+  left: 50%;
+  transform:translateX(-50%) ;
+  border-radius: 2px;
+}
+.sns a:after {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #777;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+/* Hover Function */
+.sns a:hover:before, 
+.sns a:hover:after{
+  /* display: block; */
+  opacity: 1;
+  visibility: visible;
+}
