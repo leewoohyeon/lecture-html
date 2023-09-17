@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <!-- font-awesome -->
   <script src="https://kit.fontawesome.com/1b5e252510.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                   <option value="">생각 🥰</option>
                 </select>
               </div>
-            
+
             </div>
           </div>
         </div>
@@ -73,8 +74,14 @@
             </div>
           </div>
           <div class="wrapper__right__body">
-            <iframe src="./home.html" frameborder="0"></iframe>
+            <iframe src="./home.html" frameborder="0" id="contextFrame"></iframe>
           </div>
+        </div>
+        <!-- 메뉴바 -->
+        <div class="navigation">
+          <div class="navigation__item" id="menuHome" onclick="menuHome()">홈</div>
+          <div class="navigation__item" id="menuJukebox" onclick="menuJukebox()">주크박스</div>
+          <div class="navigation__item" id="menuGame" onclick="menuGame()">게임</div>
         </div>
       </div>
     </div>
